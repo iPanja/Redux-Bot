@@ -2,6 +2,7 @@ import discord, requests, json
 from discord.ext import commands
 import difflib
 import os, pprint
+import config
 
 class Fortnite:
     def __init__(self, bot, config):
@@ -66,7 +67,7 @@ class Fortnite:
             msg += "    Type: " + match["type"] + "\n"
 
             await self.bot.send_message(ctx.message.channel, msg)
-def setup(bot, config):
+def setup(bot):
     try:
         bot.add_cog(Fortnite(bot, config.fortnite))
         print("[Fortnite Module Loaded]")

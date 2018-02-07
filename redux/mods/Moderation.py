@@ -2,18 +2,15 @@ import time
 import discord
 from discord.ext import commands
 from random import randint
-
-""" -- Config -- """
-blacklist = ['fuck', 'bitch', 'whore', 'nigger', 'cunt', 'hell', 'damn', 'damnit']
-memelist = ['Do you know de wae', 'woweee', "It's only game, why you have to be mad"]
+import config
 
 class Moderation():
-    def __init__(self, bot, blacklist, memelist):
+    def __init__(self, bot, config):
         self.bot = bot
-        self.blacklist = blacklist
-        self.memelist = memelist
+        self.word_blacklist = config["word_blacklist"]
+        self.memelist = config["memelist"]
     def isBlacklisted(self, message):
-        for bWord in self.blacklist:
+        for bWord in self.word_blacklist:
             if bWord in message.content.lower():
                 return True
         return False
@@ -49,9 +46,11 @@ class Moderation():
             await self.bot.delete_message(message)
             meme = self.getMeme()
             await self.bot.send_message(message.channel, meme + " -Courtesy of Roblox Admin Team")
+
+from pprint import pprint
 def setup(bot):
     try:
-        bot.add_cog(Moderation(bot, blacklist, memelist))
+        bot.add_cog(Moderation(bot, config.moderation))
         print("[Moderation Module Loaded]")
     except Exception as e:
         print(" >> Moderation Module: {0}".format(e))

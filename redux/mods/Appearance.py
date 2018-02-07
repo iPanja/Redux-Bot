@@ -1,10 +1,6 @@
 import discord
 from discord.ext import commands
 
-""" -- Config -- """
-blacklist = ['fuck', 'bitch', 'whore', 'nigger', 'cunt', 'adam']
-memelist = ['Do you know de wae', 'woweee', "It's only game, why you have to be mad"]
-
 class Appearance():
     def __init__(self, bot):
         self.bot = bot

@@ -4,7 +4,7 @@ from discord.ext import commands
 import config
 
 #Discord API
-discordToken = 'NDA4MzczNzQ2MTMxMjcxNjgx.DVPJrg.LWF333MHWdobKX8JVK0HT30ZHdk';
+discordToken = config.discord["key"]
 bot = discord.Client()
 
 bot = commands.Bot(command_prefix=commands.when_mentioned_or('$'), description='TSA 2018 Bot')
@@ -24,7 +24,7 @@ modules = [
 
 for cog in modules:
     try:
-        bot.load_extension(cog, config)
+        bot.load_extension(cog)
     except Exception as e:
         message = 'Failed to load module {0}\n{1} : {2}'.format(cog, type(e).__name__, e)
         bot.send_message("368100617543221260", message)

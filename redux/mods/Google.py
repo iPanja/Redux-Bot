@@ -2,7 +2,7 @@ import discord
 from discord.ext import commands
 import requests, json
 from pprint import pprint
-
+import config
 
 class Google:
     def __init__(self, bot, config):
@@ -26,7 +26,7 @@ class Google:
         oldUrl = jsonDict["longUrl"]
         await self.bot.send_message(ctx.message.channel, oldUrl)
 
-def setup(bot, config):
+def setup(bot):
     try:
         bot.add_cog(Google(bot, config.google))
         print("[Google Module Loaded]")

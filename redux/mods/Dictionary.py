@@ -1,5 +1,6 @@
 import discord, requests, json
 from discord.ext import commands
+import config
 
 class Dictionary():
     def __init__(self, bot, config):
@@ -29,7 +30,7 @@ class Dictionary():
         definition = jsonDict["results"][0]["lexicalEntries"][0]["entries"][0]["senses"][0]["definitions"][0]
         await self.bot.send_message(ctx.message.channel, word.lower() + " : " + definition)
 
-def setup(bot, config):
+def setup(bot):
     try:
         bot.add_cog(Dictionary(bot, config.oxford))
         print("[Dictionary Module Loaded]")
