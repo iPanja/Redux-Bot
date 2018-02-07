@@ -23,7 +23,7 @@ Redux is a Discord bot created for the 2018 TSA Software Development competition
 * Dictionary
   * define <word> - Gets the definition of a word from the Oxford Dictionary
 * Fornite
-  * flookup <pc/xbox/ps4> <epic username> - Gets the user's solo total kills, K/D, and time spent
+  * flookup <pc/xbox/ps4> <username> - Gets the user's solo total kills, K/D, and time spent
   * fstats <weapon name> - Gets the stats of the closest match of the weapon that you typed in
 * Google
   * expand <url> - Expands a goo.gl shortened link to get where it would redirect you to
