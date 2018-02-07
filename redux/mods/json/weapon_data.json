@@ -1,0 +1,247 @@
+{
+    " Assault Rifle": {
+        "damage": "32",
+        "dps": "176",
+        "mag_size": "30",
+        "rarity": "Common",
+        "type": "Assault Rifle"
+    },
+    " Epic Bolt Action Sniper": {
+        "damage": "110",
+        "dps": "37",
+        "mag_size": "1",
+        "rarity": "Epic",
+        "type": "Sniper Rifle"
+    },
+    " Epic Rocket Launcher": {
+        "damage": "116",
+        "dps": "87",
+        "mag_size": "1",
+        "rarity": "Epic",
+        "type": "Launcher"
+    },
+    " Epic SCAR": {
+        "damage": "37",
+        "dps": "203",
+        "mag_size": "30",
+        "rarity": "Epic",
+        "type": "Assault Rifle"
+    },
+    " Epic Scoped Rifle": {
+        "damage": "23",
+        "dps": "84",
+        "mag_size": "20",
+        "rarity": "Epic",
+        "type": "Assault Rifle"
+    },
+    " Epic Semi-Auto Shotgun": {
+        "damage": "73",
+        "dps": "111",
+        "mag_size": "8",
+        "rarity": "Epic",
+        "type": "Shotgun"
+    },
+    " Epic Semi-Auto Sniper": {
+        "damage": "63",
+        "dps": "75",
+        "mag_size": "10",
+        "rarity": "Epic",
+        "type": "Sniper Rifle"
+    },
+    " Epic Tactical SMG": {
+        "damage": "16",
+        "dps": "160",
+        "mag_size": "30",
+        "rarity": "Epic",
+        "type": "SMG"
+    },
+    " Legendary Grenade Launcher": {
+        "damage": "110",
+        "dps": "110",
+        "mag_size": "6",
+        "rarity": "Legendary",
+        "type": "Launcher"
+    },
+    " Legendary Rocket Launcher": {
+        "damage": "121",
+        "dps": "91",
+        "mag_size": "1",
+        "rarity": "Legendary",
+        "type": "Launcher"
+    },
+    " Legendary SCAR": {
+        "damage": "39",
+        "dps": "214",
+        "mag_size": "30",
+        "rarity": "Legendary",
+        "type": "Assault Rifle"
+    },
+    " Legendary Semi-Auto Sniper": {
+        "damage": "66",
+        "dps": "80",
+        "mag_size": "10",
+        "rarity": "Legendary",
+        "type": "Sniper Rifle"
+    },
+    " Legendary Tactical SMG": {
+        "damage": "17",
+        "dps": "170",
+        "mag_size": "30",
+        "rarity": "Legendary",
+        "type": "SMG"
+    },
+    " Pump Shotgun": {
+        "damage": "90",
+        "dps": "63",
+        "mag_size": "5",
+        "rarity": "Common",
+        "type": "Shotgun"
+    },
+    " Rare Assault Rifle": {
+        "damage": "33",
+        "dps": "192",
+        "mag_size": "30",
+        "rarity": "Rare",
+        "type": "Assault Rifle"
+    },
+    " Rare Bolt Action Sniper": {
+        "damage": "105",
+        "dps": "35",
+        "mag_size": "1",
+        "rarity": "Rare",
+        "type": "Sniper Rifle"
+    },
+    " Rare Grenade Launcher": {
+        "damage": "100",
+        "dps": "100",
+        "mag_size": "6",
+        "rarity": "Rare",
+        "type": "Launcher"
+    },
+    " Rare Revolver": {
+        "damage": "60",
+        "dps": "54",
+        "mag_size": "6",
+        "rarity": "Rare",
+        "type": "Pistol"
+    },
+    " Rare Rocket Launcher": {
+        "damage": "110",
+        "dps": "82",
+        "mag_size": "1",
+        "rarity": "Rare",
+        "type": "Launcher"
+    },
+    " Rare Scoped Rifle": {
+        "damage": "23",
+        "dps": "80",
+        "mag_size": "20",
+        "rarity": "Rare",
+        "type": "Assault Rifle"
+    },
+    " Rare Semi-Auto Handgun": {
+        "damage": "25",
+        "dps": "169",
+        "mag_size": "16",
+        "rarity": "Rare",
+        "type": "Pistol"
+    },
+    " Rare Semi-Auto Shotgun": {
+        "damage": "70",
+        "dps": "105",
+        "mag_size": "8",
+        "rarity": "Rare",
+        "type": "Shotgun"
+    },
+    " Rare Tactical SMG": {
+        "damage": "15",
+        "dps": "150",
+        "mag_size": "30",
+        "rarity": "Rare",
+        "type": "SMG"
+    },
+    " Revolver": {
+        "damage": "54",
+        "dps": "48",
+        "mag_size": "6",
+        "rarity": "Common",
+        "type": "Pistol"
+    },
+    " Semi-Auto Handgun": {
+        "damage": "24",
+        "dps": "155",
+        "mag_size": "16",
+        "rarity": "Common",
+        "type": "Pistol"
+    },
+    " Semi-Auto Rifle": {
+        "damage": "29",
+        "dps": "118",
+        "mag_size": "30",
+        "rarity": "Common",
+        "type": "Assault Rifle"
+    },
+    " Submachine Gun": {
+        "damage": "10",
+        "dps": "150",
+        "mag_size": "25",
+        "rarity": "Common",
+        "type": "SMG"
+    },
+    " Uncommon Assault Rifle": {
+        "damage": "32",
+        "dps": "181",
+        "mag_size": "30",
+        "rarity": "Uncommon",
+        "type": "Assault Rifle"
+    },
+    " Uncommon Pump Shotgun": {
+        "damage": "95",
+        "dps": "66",
+        "mag_size": "5",
+        "rarity": "Uncommon",
+        "type": "Shotgun"
+    },
+    " Uncommon Revolver": {
+        "damage": "57",
+        "dps": "51",
+        "mag_size": "6",
+        "rarity": "Uncommon",
+        "type": "Pistol"
+    },
+    " Uncommon Semi-Auto Handgun": {
+        "damage": "24",
+        "dps": "162",
+        "mag_size": "16",
+        "rarity": "Uncommon",
+        "type": "Pistol"
+    },
+    " Uncommon Semi-Auto Rifle": {
+        "damage": "30",
+        "dps": "122",
+        "mag_size": "30",
+        "rarity": "Uncommon",
+        "type": "Assault Rifle"
+    },
+    " Uncommon Semi-Auto Shotgun": {
+        "damage": "67",
+        "dps": "100",
+        "mag_size": "8",
+        "rarity": "Uncommon",
+        "type": "Shotgun"
+    },
+    " Uncommon Submachine Gun": {
+        "damage": "11",
+        "dps": "165",
+        "mag_size": "25",
+        "rarity": "Uncommon",
+        "type": "SMG"
+    },
+    " Uncommon Tactical SMG": {
+        "damage": "14",
+        "dps": "140",
+        "mag_size": "20",
+        "rarity": "Uncommon",
+        "type": "SMG"
+    }
+}

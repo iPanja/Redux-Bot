@@ -1,0 +1,46 @@
+import asyncio
+import discord
+from discord.ext import commands
+
+#Discord API
+discordToken = 'NDA4MzczNzQ2MTMxMjcxNjgx.DVPJrg.LWF333MHWdobKX8JVK0HT30ZHdk';
+bot = discord.Client()
+
+bot = commands.Bot(command_prefix=commands.when_mentioned_or('$'), description='TSA 2018 Bot')
+
+modules = [
+    'mods.Moderation',
+    'mods.Appearance',
+    'mods.Dictionary',
+    'mods.cards.Blackjack',
+    'mods.Fortnite',
+    'mods.Math',
+    'mods.Vote',
+    'mods.Voice',
+    'mods.Chance',
+    'mods.Google'
+]
+
+for cog in modules:
+    try:
+        bot.load_extension(cog)
+    except Exception as e:
+        message = 'Failed to load module {0}\n{1} : {2}'.format(cog, type(e).__name__, e)
+        bot.send_message("368100617543221260", message)
+        print(message)
+
+@bot.event
+async def on_ready():
+    print('Logged in as:\n{0} (ID: {0.id})'.format(bot.user))
+@bot.event
+async def on_message(message):
+    await bot.get_cog("Moderation").scrub(message)
+    await bot.process_commands(message)
+@bot.event
+async def on_command_error(error, ctx):
+    if isinstance(error, commands.CommandOnCooldown):
+        await bot.send_message(ctx.message.channel, content='This command is on a %.2fs cooldown' % error.retry_after);
+        return;
+    raise error;
+
+bot.run(discordToken)

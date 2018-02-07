@@ -1,0 +1,34 @@
+Name:  Epic Rocket Launcher, Type: Launcher, Rarity: Epic, Damage: 116, DPS: 87, MagSize: 1
+Name:  Rare Rocket Launcher, Type: Launcher, Rarity: Rare, Damage: 110, DPS: 82, MagSize: 1
+Name:  Legendary Grenade Launcher, Type: Launcher, Rarity: Legendary, Damage: 110, DPS: 110, MagSize: 6
+Name:  Rare Grenade Launcher, Type: Launcher, Rarity: Rare, Damage: 100, DPS: 100, MagSize: 6
+Name:  Legendary Semi-Auto Sniper, Type: Sniper Rifle, Rarity: Legendary, Damage: 66, DPS: 80, MagSize: 10
+Name:  Epic Semi-Auto Sniper, Type: Sniper Rifle, Rarity: Epic, Damage: 63, DPS: 75, MagSize: 10
+Name:  Epic Bolt Action Sniper, Type: Sniper Rifle, Rarity: Epic, Damage: 110, DPS: 37, MagSize: 1
+Name:  Rare Bolt Action Sniper, Type: Sniper Rifle, Rarity: Rare, Damage: 105, DPS: 35, MagSize: 1
+Name:  Legendary SCAR, Type: Assault Rifle, Rarity: Legendary, Damage: 39, DPS: 214, MagSize: 30
+Name:  Epic SCAR, Type: Assault Rifle, Rarity: Epic, Damage: 37, DPS: 203, MagSize: 30
+Name:  Epic Scoped Rifle, Type: Assault Rifle, Rarity: Epic, Damage: 23, DPS: 84, MagSize: 20
+Name:  Rare Scoped Rifle, Type: Assault Rifle, Rarity: Rare, Damage: 23, DPS: 80, MagSize: 20
+Name:  Rare Assault Rifle, Type: Assault Rifle, Rarity: Rare, Damage: 33, DPS: 192, MagSize: 30
+Name:  Uncommon Assault Rifle, Type: Assault Rifle, Rarity: Uncommon, Damage: 32, DPS: 181, MagSize: 30
+Name:  Assault Rifle, Type: Assault Rifle, Rarity: Common, Damage: 32, DPS: 176, MagSize: 30
+Name:  Uncommon Semi-Auto Rifle, Type: Assault Rifle, Rarity: Uncommon, Damage: 30, DPS: 122, MagSize: 30
+Name:  Semi-Auto Rifle, Type: Assault Rifle, Rarity: Common, Damage: 29, DPS: 118, MagSize: 30
+Name:  Epic Semi-Auto Shotgun, Type: Shotgun, Rarity: Epic, Damage: 73, DPS: 111, MagSize: 8
+Name:  Rare Semi-Auto Shotgun, Type: Shotgun, Rarity: Rare, Damage: 70, DPS: 105, MagSize: 8
+Name:  Uncommon Semi-Auto Shotgun, Type: Shotgun, Rarity: Uncommon, Damage: 67, DPS: 100, MagSize: 8
+Name:  Uncommon Pump Shotgun, Type: Shotgun, Rarity: Uncommon, Damage: 95, DPS: 66, MagSize: 5
+Name:  Pump Shotgun, Type: Shotgun, Rarity: Common, Damage: 90, DPS: 63, MagSize: 5
+Name:  Legendary Tactical SMG, Type: SMG, Rarity: Legendary, Damage: 17, DPS: 170, MagSize: 30
+Name:  Epic Tactical SMG, Type: SMG, Rarity: Epic, Damage: 16, DPS: 160, MagSize: 30
+Name:  Rare Tactical SMG, Type: SMG, Rarity: Rare, Damage: 15, DPS: 150, MagSize: 30
+Name:  Uncommon Tactical SMG, Type: SMG, Rarity: Uncommon, Damage: 14, DPS: 140, MagSize: 20
+Name:  Uncommon Submachine Gun, Type: SMG, Rarity: Uncommon, Damage: 11, DPS: 165, MagSize: 25
+Name:  Submachine Gun, Type: SMG, Rarity: Common, Damage: 10, DPS: 150, MagSize: 25
+Name:  Rare Semi-Auto Handgun, Type: Pistol, Rarity: Rare, Damage: 25, DPS: 169, MagSize: 16
+Name:  Uncommon Semi-Auto Handgun, Type: Pistol, Rarity: Uncommon, Damage: 24, DPS: 162, MagSize: 16
+Name:  Semi-Auto Handgun, Type: Pistol, Rarity: Common, Damage: 24, DPS: 155, MagSize: 16
+Name:  Rare Revolver, Type: Pistol, Rarity: Rare, Damage: 60, DPS: 54, MagSize: 6
+Name:  Uncommon Revolver, Type: Pistol, Rarity: Uncommon, Damage: 57, DPS: 51, MagSize: 6
+Name:  Revolver, Type: Pistol, Rarity: Common, Damage: 54, DPS: 48, MagSize: 6
