@@ -15,9 +15,9 @@ Redux is a Discord bot created for the 2018 TSA Software Development competition
   * randcard
   * randint min max
   * ### Raffle
-  * * rcreate (max players) - Create a raffle (set the max amount of participants)
-  * * renter - Enter the current raffle
-  * * rend - End the raffle
+   * rcreate (max players) - Create a raffle (set the max amount of participants)
+   * renter - Enter the current raffle
+   * rend - End the raffle
   * rolldie (sides)
   * rolldice (sides)
 * Dictionary
