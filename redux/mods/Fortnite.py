@@ -3,25 +3,18 @@ from discord.ext import commands
 import difflib
 import os, pprint
 
-""" -- Config --"""
-api_key = "4aa22091-3d80-401b-a6df-96b87ec6fa2f";
-url = "https://api.fortnitetracker.com/v1/profile/" #Platform/Name
-bURL = 'https://fortnitetracker.com/profile/'
-
 class Fortnite:
-    def __init__(self, bot):
+    def __init__(self, bot, config):
         self.bot = bot
         self.data = dict()
         self.keys = []
-        with open('F:\Fletcher\Documents\Python\\redux\mods\json\weapon_data.json', 'r') as f:
+        self.config = config
+        with open(config["weapon_data_loc"], 'r') as f:
             self.data = json.load(f)
             self.keys = list(self.data.keys())
     def send_request(self, platform, username):
-        r = requests.get(bURL + platform + '/' + username)
+        r = requests.get(self.config["url"] + platform + '/' + username)
         response = r.text
-        #print(bURL + platform + '/' + username)
-        #print(response)
-
         try:
             player_data = json.loads(self.find_between(response, 'var playerData = ', ';</script>'))
             account_info = json.loads(self.find_between(response, 'var accountInfo = ', ';</script>'))
@@ -73,10 +66,9 @@ class Fortnite:
             msg += "    Type: " + match["type"] + "\n"
 
             await self.bot.send_message(ctx.message.channel, msg)
-def setup(bot):
+def setup(bot, config):
     try:
-        print(os.path.dirname(os.path.realpath(__file__)))
-        bot.add_cog(Fortnite(bot))
+        bot.add_cog(Fortnite(bot, config.fortnite))
         print("[Fortnite Module Loaded]")
     except Exception as e:
         print(" >> Fortnite Module: {0}".format(e))

@@ -1,15 +1,10 @@
 import discord, requests, json
 from discord.ext import commands
 
-""" -- Config -- """
-app_id = "e582bbc3"
-app_key = "aa47642455e4b44dae35038c7b85c4ac"
-language = "en"
-url = 'https://od-api.oxforddictionaries.com:443/api/v1/entries/' + language + '/'
-
 class Dictionary():
-    def __init__(self, bot):
+    def __init__(self, bot, config):
         self.bot = bot
+        self.config = config
     @commands.command(pass_context = True)
     @commands.cooldown(1, 5, commands.BucketType.server)
     async def define(self, ctx, word:str):
@@ -18,8 +13,8 @@ class Dictionary():
             await self.bot.send_message(ctx.message.channel, word.lower() + " : The best game ever invented")
             return
 
-        www = url + word.lower()
-        r = requests.get(www, headers = {'app_id': app_id, 'app_key': app_key})
+        www = self.config["url"] + word.lower()
+        r = requests.get(www, headers = {'app_id': self.config["app_id"], 'app_key': self.config["app_key"]})
         if (r.status_code == 404):
             await self.bot.send_message(ctx.message.channel, word.lower() + " is not a word!")
             return
@@ -34,9 +29,9 @@ class Dictionary():
         definition = jsonDict["results"][0]["lexicalEntries"][0]["entries"][0]["senses"][0]["definitions"][0]
         await self.bot.send_message(ctx.message.channel, word.lower() + " : " + definition)
 
-def setup(bot):
+def setup(bot, config):
     try:
-        bot.add_cog(Dictionary(bot))
+        bot.add_cog(Dictionary(bot, config.oxford))
         print("[Dictionary Module Loaded]")
     except Exception as e:
         print(" >> Dictionary Module: {0}".format(e))

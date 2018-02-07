@@ -3,16 +3,14 @@ from discord.ext import commands
 import requests, json
 from pprint import pprint
 
-""" Google AIP Keys """
-urlshorten_key = "AIzaSyD30QQMxQWKQbDiIwEI1Z-vo7rGQnDmtMQ"
 
 class Google:
-    def __init__(self, bot, keys):
+    def __init__(self, bot, config):
         self.bot = bot
-        self.urlshorten_key = keys[0]
+        self.config = config
     @commands.command(pass_context=True)
     async def shorten(self, ctx, url:str):
-        gUrl = "https://www.googleapis.com/urlshortener/v1/url?key=" + self.urlshorten_key
+        gUrl = "https://www.googleapis.com/urlshortener/v1/url?key=" + self.config["urlshorten_key"]
         payload = {"longUrl" : url}
         headers = {"content-type" : "application/json"}
         r = requests.post(gUrl, data=json.dumps(payload), headers=headers)
@@ -21,16 +19,16 @@ class Google:
         await self.bot.send_message(ctx.message.channel, newUrl)
     @commands.command(pass_context=True)
     async def expand(self, ctx, url:str):
-        gUrl = "https://www.googleapis.com/urlshortener/v1/url?key=" + self.urlshorten_key + "&&shortUrl=" + url
+        gUrl = "https://www.googleapis.com/urlshortener/v1/url?key=" + self.config["urlshorten_key"] + "&&shortUrl=" + url
         headers = {"content-type" : "application/json"}
         r = requests.get(gUrl, headers=headers)
         jsonDict = json.loads(json.dumps(r.json()))
         oldUrl = jsonDict["longUrl"]
         await self.bot.send_message(ctx.message.channel, oldUrl)
 
-def setup(bot):
+def setup(bot, config):
     try:
-        bot.add_cog(Google(bot, [urlshorten_key]))
+        bot.add_cog(Google(bot, config.google))
         print("[Google Module Loaded]")
     except Exception as e:
         print(" >> Google Module: {0}".format(e))
