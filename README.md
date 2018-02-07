@@ -5,7 +5,7 @@ A discord bot for a TSA competition, written in Python.
 Redux is a Discord bot created for the 2018 TSA Software Development competition. If you have any issues or requests, open up an issue. This bot is not pretty, but that will be fixed in a future update.
 
 # Commands
-* updateBot game : Sets the game that the bot is currently playing
+* updateBot <game> : Sets the game that the bot is currently playing
 * Blackjack
   * create : sets up the game
   * hit (1) : Hit, add an additional card to your hand
@@ -14,7 +14,7 @@ Redux is a Discord bot created for the 2018 TSA Software Development competition
   * flipcoin
   * randcard
   * randint min max
-  * ### Raffle
+  * Raffle
     * rcreate (max players) - Create a raffle (set the max amount of participants)
     * renter - Enter the current raffle
     * rend - End the raffle
