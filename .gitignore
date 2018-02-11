@@ -1,2 +1,4 @@
 redux/config.py
 redux/__pycache__/
+redux/mods/__pychache__/
+*.pyc

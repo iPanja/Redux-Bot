@@ -17,7 +17,7 @@ modules = [
     'mods.Fortnite',
     'mods.Math',
     'mods.Vote',
-    'mods.Voice',
+    'mods.Music',
     'mods.Chance',
     'mods.Google'
 ]
