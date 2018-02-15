@@ -1,7 +1,6 @@
 import discord
 from discord.ext import commands
 import requests, json
-from pprint import pprint
 import config
 
 class Google:

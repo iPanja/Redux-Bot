@@ -1,5 +1,5 @@
 from __future__ import unicode_literals
-import discord, asyncio, youtube_dl, threading
+import discord
 from discord.ext import commands
 
 yt_config = {

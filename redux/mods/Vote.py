@@ -1,4 +1,4 @@
-import discord, asyncio, time
+import discord
 from discord.ext import commands
 
 class Vote:

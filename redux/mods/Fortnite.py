@@ -1,7 +1,6 @@
 import discord, requests, json
 from discord.ext import commands
 import difflib
-import os, pprint
 import config
 
 class Fortnite:
@@ -41,13 +40,13 @@ class Fortnite:
         except IndexError:
             await self.bot.send_message(ctx.message.channel, "Player not found")
 
-        msg = "SOLO: " + player + "\n"
-        msg += "  Kills: " + solo[11]['displayValue'] + "\n"
-        msg += "  K/D: " + solo[9]['displayValue'] + "\n"
-        msg += "  Time Played: " + solo[12]['displayValue'] + "\n"
-        msg += "  Top 25: " + solo[8]['displayValue'] + "\n"
+        embed = discord.Embed(title="Fortnite Stats", description="~TRN Network", color=0x00ff00)
+        embed.add_field(name="K/D", value=solo[9]['displayValue'], inline=False)
+        embed.add_field(name="Score", value=solo[1]['displayValue'], inline=True)
+        embed.add_field(name="Top 25", value=solo[8]['displayValue'], inline=True)
+        embed.add_field(name="Time Played", value=solo[12]['displayValue'], inline=True)
 
-        await self.bot.send_message(ctx.message.channel, msg)
+        await self.bot.send_message(ctx.message.channel, embed=embed)
     @commands.command(pass_context = True)
     async def fstats(self, ctx):
         args = (ctx.message.content).split()[1:]
@@ -66,7 +65,14 @@ class Fortnite:
             msg += "    Rarity: " + match["rarity"] + "\n"
             msg += "    Type: " + match["type"] + "\n"
 
-            await self.bot.send_message(ctx.message.channel, msg)
+            embed = discord.Embed(title="Fortnite Weapon Stats", description="~Courtesy of Redux", color=0x00ff00)
+            embed.add_field(name=matches[0], value=match['type'], inline=False)
+            embed.add_field(name="Damage", value=match['damage'])
+            embed.add_field(name="DPS", value=match['dps'])
+            embed.add_field(name="Mag Size", value=match['mag_size'])
+            embed.add_field(name="Rarity", value=match['rarity'])
+
+            await self.bot.send_message(ctx.message.channel, embed=embed)
 def setup(bot):
     try:
         bot.add_cog(Fortnite(bot, config.fortnite))

@@ -1,4 +1,3 @@
-import asyncio
 import discord
 from discord.ext import commands
 import config
@@ -19,7 +18,8 @@ modules = [
     'mods.Vote',
     'mods.Music',
     'mods.Chance',
-    'mods.Google'
+    'mods.Google',
+    'mods.Market'
 ]
 
 for cog in modules:
@@ -33,6 +33,11 @@ for cog in modules:
 @bot.event
 async def on_ready():
     print('Logged in as:\n{0} (ID: {0.id})'.format(bot.user))
+    """
+    await bot.edit_profile(username="Redux")
+    with open('F:\Fletcher\Pictures\logo.png', 'rb') as f:
+        await bot.edit_profile(avatar=f.read())
+    """
 @bot.event
 async def on_message(message):
     await bot.get_cog("Moderation").scrub(message)
