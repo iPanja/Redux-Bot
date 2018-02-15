@@ -1,6 +1,5 @@
-import discord, pprint
+import discord
 from discord.ext import commands
-from pprint import pprint
 from py_expression_eval import Parser
 
 class Math:
@@ -11,8 +10,6 @@ class Math:
         self.vars = dict()
     @commands.command(pass_context = True)
     async def solve(self, ctx):
-        print(self.eq)
-        pprint(self.vars)
         eval = self.parser.parse(self.eq).evaluate(self.vars)
         await self.bot.send_message(ctx.message.channel, "Answer: " + str(eval))
         #Reset
