@@ -54,6 +54,8 @@ Redux is a Discord bot created for the 2018 TSA Software Development competition
   * pvote <option> Vote for the option in the poll
 * Stock Market
   * stock <ticker> - Gets information about the stock's prices
+* Weather
+  * weather <city/zipcode> - Gets the current weather information
 
 # Planned Features
 * Voice/Music autoplay

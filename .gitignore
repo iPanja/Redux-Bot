@@ -2,3 +2,4 @@ redux/config.py
 redux/__pycache__/
 redux/mods/__pycache__/
 *.pyc
+*.pyc

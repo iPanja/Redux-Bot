@@ -19,7 +19,8 @@ modules = [
     'mods.Music',
     'mods.Chance',
     'mods.Google',
-    'mods.Market'
+    'mods.Market',
+    'mods.Weather'
 ]
 
 for cog in modules:
