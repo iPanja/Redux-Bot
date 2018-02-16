@@ -6,15 +6,17 @@ import time
 class Blackjack:
     def __init__(self, bot):
         self.bot = bot;
-        self.setup();
+        self.state = 3
 
     def setup(self):
-        self.deck = [];
-        self.deck = self.newDeck();
-        self.pHand = [];
-        self.dHand = [];
-        self.state = 0;  # 1=Player, 2=Dealer, 3=GameOver
-        self.assignHands();
+        self.deck = []
+        self.deck = self.newDeck()
+        self.pHand = []
+        self.dHand = []
+        self.game_msg = None
+        self.game_channel = None
+        self.state = 1  # 1=Player, 2=Dealer, 3=GameOver, 4=CalcWinner
+        self.assignHands()
 
     @staticmethod
     def newDeck():
@@ -65,78 +67,89 @@ class Blackjack:
         else:
             print("winner: error");
 
-    def printHands(self):
-        for i in range(0, 10):
-            print("\n");
-
-        print("You: " + str(self.calc(self.pHand)));
-        msg = "";
-        for card in self.pHand:
-            msg += (card + ", ");
-        print(msg)
-
-        msg = "";
-        if (self.state == 1):
-            for card in self.dHand:
-                msg += (card + ", ");
-            print("\nDealer: " + str(self.calc(self.dHand)));
-            print(msg);
-        else:
-            print("\nDealer: ");
-            print(self.dHand[0] + ", ?");
-        print("----------------------");
-
     def hit(self, hand):
         hand.append(self.deck[0]);
         self.deck.pop(0);
-    def display(self, msg):
-        msg += "Your Hand: " + str(self.calc(self.pHand)) + "\n";
+
+    async def display(self):
+        embed = discord.Embed(title="Blackjack", description="You vs AI", color=0x00ff00)
+
+        temp = ""
         for card in self.pHand:
-            msg += (card + ", ");
-        msg += "\nDealer's Hand: " + str(self.calc(self.dHand)) + "\n";
-        if(self.state == 1):
-            msg += "?";
+            temp += card + ", "
+        embed.add_field(name="Your Hand: " + str(self.calc(self.pHand)), value=temp)
+
+        temp = ""
+        calc = ""
+        if self.state == 1:
+            temp = self.dHand[0] + ", ?"
+            calc = "?"
         else:
             for card in self.dHand:
-                msg += (card + ", ");
-        return msg;
+                temp += card + ", "
+                calc = str(self.calc(self.dHand))
 
+        embed.add_field(name="Dealer's Hand: " + calc, value=temp)
+
+        temp = ""
+        if self.state == 1:
+            temp = "Select an option"
+        elif self.state == 2:
+            temp = "The dealer is taking his turn..."
+        elif self.state == 4:
+            self.state = 3
+            temp = "Game Over - You have "
+            if self.winner() == 0:
+                temp += "won"
+            elif self.winner() == 1:
+                temp += "lost"
+            else:
+                temp += "tied"
+        else:
+            temp = "ERROR, uh..."
+
+
+        embed.add_field(name="Status", value=temp, inline=False)
+
+        self.game_msg = await self.bot.edit_message(self.game_msg, new_content=".", embed=embed)
+
+        if(self.state == 3):
+            self.game_msg = None
     @commands.command(pass_context=True)
     @commands.cooldown(1, 2, commands.BucketType.server)
     async def blackjack(self, ctx, choice:str):
         if(choice == "create"):
-            self.setup();
-            msg = "New game setup vs AI Dealer.\n\n";
-            await self.bot.send_message(ctx.message.channel, self.display(msg));
-        elif(choice == "hit" or choice == "1"):
-            self.hit(self.pHand);
-            calc = self.calc(self.pHand);
+            if self.state != 3:
+                await self.bot.send_message(ctx.message.channel, "A game is currently in progress... use '$blackjack reset' to confirm this action")
+                return
+            self.setup()
+            self.game_channel = ctx.message.channel
+            self.game_msg = await self.bot.send_message(ctx.message.channel, "The game is being created...")
+            time.sleep(2)
 
-            msg = self.display("") + "\n";
-            if(calc > 21):
-                await self.bot.send_message(ctx.message.channel, msg + "Blackjack: Game over, you have lost.")
-                self.state = 2;
-            elif(calc == 21):
-                await self.bot.send_message(ctx.message.channel, msg + "Nice, 21 exactly - Advancing to Dealer's Turn");
-                self.state = 1;
-            else:
-                await self.bot.send_message(ctx.message.channel, msg);
-        elif(choice == "stay" or choice == "2"):
-            while(self.state != 2):
+            await self.display()
+        elif(choice == "hit" or choice == "1") and self.state == 1:
+            self.hit(self.pHand);
+            if self.calc(self.pHand) > 21:
+                self.state = 4
+            await self.display()
+        elif(choice == "stay" or choice == "2") and self.state == 1:
+            while(self.state != 3):
                 dCalc = self.calc(self.dHand);
                 if(dCalc <= 16):
-                    self.hit(self.dHand);
-                    time.sleep(2);
+                    self.hit(self.dHand)
                 else:
-                    gWinner = self.winner();
-                    msg = self.display("") + "\n";
-                    if(gWinner == 0):
-                        await self.bot.send_message(ctx.message.channel, msg + "Blackjack: Game over, you have won.");
-                    elif(gWinner == 1):
-                        await self.bot.send_message(ctx.message.channel, msg + "Blackjack: Game over, you have lost.");
-                    else:
-                        await self.bot.send_message(ctx.message.channel, msg + "Blackjack: Game over, you have tied.");
-                    self.state = 2;
+                    self.state = 4;
+                await self.display()
+        elif(choice == "reset"):
+            self.setup()
+            self.game_channel = ctx.message.channel
+            self.game_msg = await self.bot.send_message(ctx.message.channel, "The game is being created...")
+            time.sleep(2)
+
+            await self.display()
+        #Cleanup Command
+        await self.bot.delete_message(ctx.message)
 
 def setup(bot):
     try:

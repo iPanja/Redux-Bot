@@ -26,7 +26,7 @@ class Weather:
         else:
             #City
             www = self.config['url'] + "q=" + query
-        www += "&appid=" + self.config["key"]
+        www += "&appid=" + self.config["key"] + "&units=imperial"
 
         r = requests.get(www)
         jsonDict = json.loads(json.dumps(r.json()))
@@ -43,10 +43,10 @@ class Weather:
         embed = discord.Embed(title="Weather", description="~Open Weather Map", color=0x00ff00)
         embed.add_field(name=jsonDict['name'], value=jsonDict['sys']['country'])
         embed.add_field(name=jsonDict['weather'][0]['main'], value=jsonDict['weather'][0]['description'])
-        embed.add_field(name="Temperature", value=jsonDict['main']['temp'])
-        embed.add_field(name="Pressure", value=jsonDict['main']['pressure'])
-        embed.add_field(name="Humidity", value=jsonDict['main']['humidity'])
-        embed.add_field(name="Wind Speed", value=jsonDict['wind']['speed'])
+        embed.add_field(name="Temperature", value=str(jsonDict['main']['temp']) + "°F")
+        embed.add_field(name="Pressure", value=str(jsonDict['main']['pressure']) + "Pa")
+        embed.add_field(name="Humidity", value=str(jsonDict['main']['humidity']) + "%")
+        embed.add_field(name="Wind Speed", value=str(jsonDict['wind']['speed']) + "mph")
 
         await self.bot.send_message(ctx.message.channel, embed=embed)
 def setup(bot):

@@ -25,6 +25,7 @@ class Google:
         oldUrl = jsonDict["longUrl"]
         await self.bot.send_message(ctx.message.channel, oldUrl)
 
+
 def setup(bot):
     try:
         bot.add_cog(Google(bot, config.google))

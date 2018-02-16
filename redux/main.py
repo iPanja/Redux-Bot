@@ -11,16 +11,16 @@ bot = commands.Bot(command_prefix=commands.when_mentioned_or('$'), description='
 modules = [
     'mods.Moderation',
     'mods.Appearance',
-    'mods.Dictionary',
+    'mods.api.Dictionary',
     'mods.cards.Blackjack',
-    'mods.Fortnite',
+    'mods.api.Fortnite',
     'mods.Math',
     'mods.Vote',
     'mods.Music',
     'mods.Chance',
-    'mods.Google',
-    'mods.Market',
-    'mods.Weather'
+    'mods.api.Google',
+    'mods.api.Market',
+    'mods.api.Weather'
 ]
 
 for cog in modules:
@@ -48,6 +48,8 @@ async def on_command_error(error, ctx):
     if isinstance(error, commands.CommandOnCooldown):
         await bot.send_message(ctx.message.channel, content='This command is on a %.2fs cooldown' % error.retry_after);
         return;
+    if isinstance(error, commands.CommandNotFound):
+        return
     raise error;
 
 bot.run(discordToken)
