@@ -9,9 +9,9 @@ Redux is a Discord bot created for the 2018 TSA Software Development competition
 * Appearance
   * ```updateBot <game>``` : Sets the game that the bot is currently playing
 * Blackjack
-  * ```create``` : sets up the game
-  * ```hit``` Hit, add an additional card to your hand
-  * ```stay ``` Stay, end your turn
+  * ```blackjack create``` : sets up the game
+  * ```blackjack hit``` Hit, add an additional card to your hand
+  * ```blackjack stay ``` Stay, end your turn
 * Games of Chance
   * ```flipcoin```
   * ```randcard```
