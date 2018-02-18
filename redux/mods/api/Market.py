@@ -17,11 +17,6 @@ class Market:
             entry = current[list(current.keys())[i]]
             value = round(float(entry), 2)
             current[list(current.keys())[i]] = str(value)
-        """MANUAL MESSAGE
-        msg = ticker.upper() + " Daily Data\nOpened at: $" + current['1. open'] + "\t\tClosed at: $" + current['4. close']
-        msg += "\nLow: $" + current['3. low'] + "\t\tHigh: $" + current['2. high']
-        await self.bot.send_message(ctx.message.channel, msg)
-        """
         #EMBED
         embed = discord.Embed(title=ticker.upper(), description="Daily Stock Info", color=0x00ff00)
         embed.add_field(name="Opened:", value="$" + current['1. open'], inline=True)

@@ -12,7 +12,7 @@ modules = [
     'mods.Moderation',
     'mods.Appearance',
     'mods.api.Dictionary',
-    'mods.cards.Blackjack',
+    'mods.games.Blackjack',
     'mods.api.Fortnite',
     'mods.Math',
     'mods.Vote',
@@ -20,7 +20,9 @@ modules = [
     'mods.Chance',
     'mods.api.Google',
     'mods.api.Market',
-    'mods.api.Weather'
+    'mods.api.Weather',
+    'mods.api.Reddit',
+    'mods.games.Connect4'
 ]
 
 for cog in modules:
