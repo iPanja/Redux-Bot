@@ -25,7 +25,7 @@ class Connect4:
     @c4.command(pass_context = True)
     async def new(self, ctx, p1:discord.Member, p2:discord.Member):
         if self.state != 0:
-            await self.bot.send_message(ctx.message.channel, "A game is currently in progress, please use '''$c4 remake''' if you wish to proceed.")
+            await self.bot.send_message(ctx.message.channel, "A game is currently in progress, please use ```$c4 remake``` if you wish to proceed.")
             return
         self.reset()
         self.p1 = p1
@@ -37,9 +37,9 @@ class Connect4:
     @c4.command(pass_context = True)
     async def remake(self, ctx):
         self.reset()
-        await self.bot.send_message(ctx.message.channel, "You may now use '''$c4 create <player> <player>''' to create a new game.")
+        await self.bot.send_message(ctx.message.channel, "You may now use ```$c4 create <@player> <@player>``` to create a new game.")
     @c4.command(pass_context = True)
-    async def put(self, ctx, x:int):
+    async def place(self, ctx, x:int):
         if self.state == 0:
             return
         if self.state == 1 and self.p1 != ctx.message.author:
@@ -67,7 +67,7 @@ class Connect4:
             await self.display()
 
     async def display(self):
-        embed = discord.Embed(title="Connect 4", description=self.p1.display_name + " vs " + self.p2.display_name)
+        embed = discord.Embed(title="Connect 4", description='\N{large red circle} ' + self.p1.display_name + " vs \N{large blue circle} " + self.p2.display_name)
         text = ".  1 \t2  \t3 \t4 \t5 \t6 \t7\n"
         for row in self.board:
             for piece in row:
@@ -82,11 +82,15 @@ class Connect4:
 
         status = "Game Over"
         if self.state == 1:
-            status = "Player 1's turn"
+            status = "\N{large red circle} Player 1's turn"
         elif self.state == 2:
-            status = "Player 2's turn"
+            status = "\N{large blue circle} Player 2's turn"
         elif self.winner != None:
-            status += ". Player " + str(self.winner) + " has won."
+            status += ". Player " + str(self.winner) + " has won. "
+            if self.winner == 1:
+                status += '\N{large red circle}'
+            else:
+                status += '\N{large blue circle}'
 
         embed.add_field(name="Status", value=status, inline=False)
         self.game_msg = await self.bot.edit_message(self.game_msg, new_content = ".", embed=embed)
