@@ -5,6 +5,7 @@ A discord bot for a TSA competition, written in Python.
 Redux is a Discord bot created for the 2018 TSA Software Development competition. If you have any issues or requests, please open up an issue.
 
 # Commands
+### Prefix: $
 * Appearance
   * ```updateBot <game>``` : Sets the game that the bot is currently playing
 * Blackjack
