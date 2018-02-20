@@ -22,7 +22,8 @@ modules = [
     'mods.api.Market',
     'mods.api.Weather',
     'mods.api.Reddit',
-    'mods.games.Connect4'
+    'mods.games.Connect4',
+    'mods.games.Hangman'
 ]
 
 for cog in modules:
