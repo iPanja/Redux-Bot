@@ -69,7 +69,7 @@ Redux is a Discord bot created for the 2018 TSA Software Development competition
   * ```c4 remake``` Remakes the game
 * Hangman
   * ```hangman new``` Creates a new Hangman game
-  * ```hangman guess``` Guess a letter
+  * ```hangman guess <letter>``` Guess a letter
   * ```hangman remake``` Remakes the game
 
 # Planned Features
