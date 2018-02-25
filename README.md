@@ -71,15 +71,22 @@ Redux is a Discord bot created for the 2018 TSA Software Development competition
   * ```hangman new``` Creates a new Hangman game
   * ```hangman guess <letter>``` Guess a letter
   * ```hangman remake``` Remakes the game
+* Tic Tac Toe
+  * ```ttt new <@player> <@player>``` Creates a Tic Tac Toe game between the players mentioned
+  * ```ttt place <position>``` Places your mark at the designated position
+  * ```ttt remake``` Remakes the game
 
 # Planned Features
-* **✅** Updated interface using embeds
-* **✅** Connect 4
-* **✅** Reddit
-* Setup on Heroku
+* **[x]** Updated interface using embeds
+* **[x]** Connect 4
+* **[x]** Reddit
+* **[ ]** Poker
+* **[ ]** Mobile App to control settings (mute players, etc)
+  * iPhone - Expected to begin development on March 8
+  * Android - To be announced
+* **[ ]** Setup on Heroku
   * Not sure if it will work after it falls asleep (on the free plan)
   * Figure out how to stop abuse of API before deploying 24/7
-* Voice/Music autoplay
+* **[ ]** Voice/Music autoplay
+* **[ ]** Write a script to pull the newest release of this bot and restart the bot (for a Raspberry Pi or Heroku)
 * Find more things to add :)
-* Write a script to pull the newest release of this bot and restart the bot (for a Raspberry Pi or Heroku)
-
