@@ -23,7 +23,8 @@ modules = [
     'mods.api.Weather',
     'mods.api.Reddit',
     'mods.games.Connect4',
-    'mods.games.Hangman'
+    'mods.games.Hangman',
+    'mods.games.TicTacToe'
 ]
 
 for cog in modules:
