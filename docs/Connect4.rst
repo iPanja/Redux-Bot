@@ -15,7 +15,7 @@ Connect 4
 Commands
 ---------
 
-    **$4 new <@Player> <@Player>**
+    **$c4 new <@Player> <@Player>**
         Arguments: (Mention) Player 1, Player 2
         Creates a new Blackjack game between you and an AI dealer who follows traditional dealer rules.
 
