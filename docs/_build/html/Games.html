@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Connect 4 &mdash; Redux 2.6.6 documentation</title>
+  <title>Games &mdash; Redux 2.6.6 documentation</title>
   
 
   
@@ -36,7 +36,8 @@
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
     <link rel="top" title="Redux 2.6.6 documentation" href="index.html"/>
-        <link rel="prev" title="Blackjack" href="Blackjack.html"/> 
+        <link rel="next" title="API" href="Api.html"/>
+        <link rel="prev" title="Redux - A discord bot" href="index.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -86,11 +87,15 @@
             
             
               <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="Blackjack.html">Blackjack</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Connect 4</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#commands">Commands</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Games</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#blackjack">Blackjack</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#connect-4">Connect 4</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#hangman">Hangman</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#tic-tac-toe">Tic Tac Toe</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="Api.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Miscellaneous.html">Miscellaneous</a></li>
 </ul>
 
             
@@ -135,13 +140,13 @@
     
       <li><a href="index.html">Docs</a> &raquo;</li>
         
-      <li>Connect 4</li>
+      <li>Games</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/Connect4.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/Games.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -154,22 +159,67 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="connect-4">
-<span id="command-game-connect4"></span><h1>Connect 4<a class="headerlink" href="#connect-4" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="games">
+<span id="section-games"></span><h1>Games<a class="headerlink" href="#games" title="Permalink to this headline">¶</a></h1>
 <div class="toctree-wrapper compound">
 </div>
-<div class="section" id="commands">
-<h2>Commands<a class="headerlink" href="#commands" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="blackjack">
+<span id="section-games-blackjack"></span><h2>Blackjack<a class="headerlink" href="#blackjack" title="Permalink to this headline">¶</a></h2>
 <blockquote>
 <div><dl class="docutils">
-<dt><strong>$4 new &lt;&#64;Player&gt; &lt;&#64;Player&gt;</strong></dt>
+<dt><strong>$hangman new</strong></dt>
 <dd>Arguments: (Mention) Player 1, Player 2
 Creates a new Blackjack game between you and an AI dealer who follows traditional dealer rules.</dd>
+<dt><strong>$hangman guess &lt;letter&gt;</strong></dt>
+<dd>Arguments: (1 letter/char) letter
+Guesses the specified letter.</dd>
+<dt><strong>$hangman remake</strong></dt>
+<dd>Resets the game to allow you to make a new game using <em>$hangman new</em></dd>
+</dl>
+</div></blockquote>
+</div>
+<div class="section" id="connect-4">
+<span id="section-games-connect4"></span><h2>Connect 4<a class="headerlink" href="#connect-4" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><dl class="docutils">
+<dt><strong>$c4 new &lt;&#64;Player&gt; &lt;&#64;Player&gt;</strong></dt>
+<dd>Arguments: (Mention) Player 1, Player 2
+Creates a new Connect 4 game between the specified players.</dd>
 <dt><strong>$c4 place &lt;Column&gt;</strong></dt>
 <dd>Arguments: (int) Column
 Places your chip in the specified column. This command will only work if it is your turn.</dd>
 <dt><strong>$c4 remake</strong></dt>
 <dd>Resets the game to allow you to make a new game using <em>$c4 new &lt;&#64;Player&gt; &lt;&#64;Player&gt;</em></dd>
+</dl>
+</div></blockquote>
+</div>
+<div class="section" id="hangman">
+<span id="section-games-hangman"></span><h2>Hangman<a class="headerlink" href="#hangman" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><dl class="docutils">
+<dt><strong>$hangman new</strong></dt>
+<dd>Arguments: (Mention) Player 1, Player 2
+Creates a new Blackjack game between you and an AI dealer who follows traditional dealer rules.</dd>
+<dt><strong>$hangman guess &lt;letter&gt;</strong></dt>
+<dd>Arguments: (1 letter/char) letter
+Guesses the specified letter.</dd>
+<dt><strong>$hangman remake</strong></dt>
+<dd>Resets the game to allow you to make a new game using <em>$hangman new</em></dd>
+</dl>
+</div></blockquote>
+</div>
+<div class="section" id="tic-tac-toe">
+<span id="section-games-tictactoe"></span><h2>Tic Tac Toe<a class="headerlink" href="#tic-tac-toe" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><dl class="docutils">
+<dt><strong>$ttt new &lt;&#64;Player&gt; &lt;&#64;Player&gt;</strong></dt>
+<dd>Arguments: (Mention) Player 1, Player 2
+Creates a new Tic Tac Toe between the specified players.</dd>
+<dt><strong>$ttt place &lt;position&gt;</strong></dt>
+<dd>Arguments: (int) position
+Places your chip at the specified location on the board. Only works if it is your turn.</dd>
+<dt><strong>$ttt remake</strong></dt>
+<dd>Resets the game to allow you to make a new game using <em>$ttt new</em></dd>
 </dl>
 </div></blockquote>
 </div>
@@ -185,8 +235,10 @@ Places your chip in the specified column. This command will only work if it is y
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
+        <a href="Api.html" class="btn btn-neutral float-right" title="API" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
-        <a href="Blackjack.html" class="btn btn-neutral" title="Blackjack" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+        <a href="index.html" class="btn btn-neutral" title="Redux - A discord bot" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

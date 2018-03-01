@@ -1,0 +1,355 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Miscellaneous &mdash; Redux 2.6.6 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="Redux 2.6.6 documentation" href="index.html"/>
+        <link rel="prev" title="API" href="Api.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Redux
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="Games.html">Games</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Api.html">API</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Miscellaneous</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#appearance">Appearance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#chance">Chance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#math">Math</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#moderation">Moderation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#music">Music</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#vote">Vote</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Redux</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Miscellaneous</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/Miscellaneous.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="miscellaneous">
+<span id="section-miscellaneous"></span><h1>Miscellaneous<a class="headerlink" href="#miscellaneous" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+</div>
+<div class="section" id="appearance">
+<span id="section-miscellaneous-appearance"></span><h2>Appearance<a class="headerlink" href="#appearance" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><dl class="docutils">
+<dt><strong>$updateBot &lt;status&gt;</strong></dt>
+<dd>Arguments: (string) status - Any word(s)
+Sets the ‘playing’ status of the bot</dd>
+</dl>
+</div></blockquote>
+</div>
+<div class="section" id="chance">
+<span id="section-miscellaneous-chance"></span><h2>Chance<a class="headerlink" href="#chance" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><dl class="docutils">
+<dt><strong>$flipcoin</strong></dt>
+<dd>Randomly flips a coin.</dd>
+<dt><strong>$randcard</strong></dt>
+<dd>Gets a random card from a standard deck of 52 cards.</dd>
+<dt><strong>$randint (min, max)</strong></dt>
+<dd>Picks a random number between 1 and 10, or between &lt;min&gt; and &lt;max&gt; if specified.</dd>
+<dt><strong>$rolldie (sides)</strong></dt>
+<dd>Arguments: [Optional](int) the amount of sides the die should have.
+Randomly rolls a die between 1 and 6, or 1 and &lt;sides&gt; if specified.</dd>
+<dt><strong>$rolldice (sides)</strong></dt>
+<dd>Arguments: [Optional](int) the amount of sides the dice should have.
+Randomly rolls 2 dice between 1 and 6, or 1 and &lt;sides&gt; if specified.</dd>
+<dt><strong>$solve</strong></dt>
+<dd>Solves the equation using the variables specified if applicable</dd>
+</dl>
+<p><strong>Raffle</strong></p>
+<blockquote>
+<div><dl class="docutils">
+<dt><strong>$rcreate (max players)</strong></dt>
+<dd>Arguments: [Optional](int) Max players that can join the raffle
+Creates a raffle that will select a random participant upon ending, default max players is unlimited.</dd>
+<dt><strong>$renter</strong></dt>
+<dd>Enters you in the current raffle</dd>
+<dt><strong>$rend</strong></dt>
+<dd>Ends the current raffle</dd>
+</dl>
+</div></blockquote>
+</div></blockquote>
+</div>
+<div class="section" id="math">
+<span id="section-miscellaneous-math"></span><h2>Math<a class="headerlink" href="#math" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><dl class="docutils">
+<dt><strong>$equation &lt;equation&gt;</strong></dt>
+<dd>Arguments: (equation) The equation
+Sets the current math equation to be calculated, 4x must be 4*x</dd>
+<dt><strong>$variable &lt;var&gt; &lt;value&gt;</strong></dt>
+<dd>Arguments: (string) variable. (int) value
+Sets the current value of the variable that is being used for the equation</dd>
+<dt><strong>$solve</strong></dt>
+<dd>Solves the equation using the variables specified if applicable</dd>
+</dl>
+</div></blockquote>
+</div>
+<div class="section" id="moderation">
+<span id="section-miscellaneous-moderation"></span><h2>Moderation<a class="headerlink" href="#moderation" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><dl class="docutils">
+<dt><strong>$clean &lt;amount&gt;</strong></dt>
+<dd>Arguments: (int) Amount of messages to be deleted
+Deletes the last <em>x</em> amount of messages in the channel the command was issued in</dd>
+<dt><strong>$spam &lt;message&gt; &lt;amount&gt;</strong></dt>
+<dd>Arguments: (words) message. (int) amount of messages to spam
+Spams the message <em>x</em> times in the channel the command was issued in</dd>
+</dl>
+</div></blockquote>
+</div>
+<div class="section" id="music">
+<span id="section-miscellaneous-music"></span><h2>Music<a class="headerlink" href="#music" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><dl class="docutils">
+<dt><strong>$summon</strong></dt>
+<dd>Summons the bot to your voice channel</dd>
+<dt><strong>$play &lt;song url&gt;</strong></dt>
+<dd>Arguments: (url) Song url
+Plays the specified song. If one is already playing it is added to the queue.</dd>
+<dt><strong>$set</strong></dt>
+<dd>Plays the next song in the queue</dd>
+<dt><strong>$skip</strong></dt>
+<dd>Skips the current song</dd>
+<dt><strong>$volume &lt;volume&gt;</strong></dt>
+<dd>Arguments: (float) volume level
+Sets the volume of the music player. Must be a value between 0 and 1.</dd>
+<dt><strong>$disconnect</strong></dt>
+<dd>Disconnects the bot from your voice channel</dd>
+<dt><strong>clear</strong></dt>
+<dd>Clears the queue</dd>
+</dl>
+</div></blockquote>
+</div>
+<div class="section" id="vote">
+<span id="section-miscellaneous-vote"></span><h2>Vote<a class="headerlink" href="#vote" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><dl class="docutils">
+<dt><strong>$pcreate &lt;poll name&gt;</strong></dt>
+<dd>Arguments: (string) Poll name
+Creates a poll with the specified name</dd>
+<dt><strong>$pcurrent</strong></dt>
+<dd>Gets information about the current poll</dd>
+<dt><strong>$poption &lt;option name&gt;</strong></dt>
+<dd>Arguments: (string) Option name
+Adds another option with the specified name to the current poll</dd>
+<dt><strong>$pstart</strong></dt>
+<dd><strong>Status: Depreciated</strong> - Does not need to be used
+Starts the poll</dd>
+<dt><strong>$pstop</strong></dt>
+<dd>Stop the current poll and display the results</dd>
+<dt><strong>$pvote &lt;option&gt;</strong></dt>
+<dd>Vote for the specified option in the current poll</dd>
+</dl>
+</div></blockquote>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="Api.html" class="btn btn-neutral" title="API" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Fletcher H, Tyler B, Adam O.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'2.6.6',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

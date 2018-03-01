@@ -10,8 +10,9 @@ Redux - A discord bot
    :maxdepth: 2
    :hidden:
 
-   Blackjack
-   Connect4
+   Games
+   Api
+   Miscellaneous
 
 
 Indices and tables
@@ -24,19 +25,29 @@ Indices and tables
 
 Commands
 ==============
-   * Games
 
-      * :ref:`command-game-Blackjack`
-      * :ref:`command-game-Connect4`
-      * :ref:`command-game-Hangman`
-      * :ref:`command-game-TicTacToe`
+   * :ref:`section-games`
 
-   * API
+      * :ref:`section-games-Blackjack`
+      * :ref:`section-games-Connect4`
+      * :ref:`section-games-Hangman`
+      * :ref:`section-games-TicTacToe`
 
-      * :ref:`command-api-Dictionary`
-      * :ref:`command-api-Urban`
-      * :ref:`command-api-Fortnite`
-      * :ref:`command-api-Google`
-      * :ref:`command-api-Stocks`
-      * :ref:`command-api-Reddit`
-      * :ref:`command-api-Weather`
+   * :ref:`section-api`
+
+      * :ref:`section-api-Dictionary`
+      * :ref:`section-api-Urban`
+      * :ref:`section-api-Fortnite`
+      * :ref:`section-api-Google`
+      * :ref:`section-api-Stocks`
+      * :ref:`section-api-Reddit`
+      * :ref:`section-api-Weather`
+
+   * :ref:`section-miscellaneous`
+
+      * :ref:`section-miscellaneous-appearance`
+      * :ref:`section-miscellaneous-chance`
+      * :ref:`section-miscellaneous-math`
+      * :ref:`section-miscellaneous-moderation`
+      * :ref:`section-miscellaneous-music`
+      * :ref:`section-miscellaneous-vote`
