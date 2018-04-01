@@ -92,6 +92,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#connect-4">Connect 4</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#hangman">Hangman</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#tic-tac-toe">Tic Tac Toe</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#spyfall">Spyfall</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Api.html">API</a></li>
@@ -220,6 +221,23 @@ Creates a new Tic Tac Toe between the specified players.</dd>
 Places your chip at the specified location on the board. Only works if it is your turn.</dd>
 <dt><strong>$ttt remake</strong></dt>
 <dd>Resets the game to allow you to make a new game using <em>$ttt new</em></dd>
+</dl>
+</div></blockquote>
+</div>
+<div class="section" id="spyfall">
+<span id="section-games-spyfall"></span><h2>Spyfall<a class="headerlink" href="#spyfall" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><dl class="docutils">
+<dt><strong>$spyfall new</strong></dt>
+<dd>Creates a spyfall game with the people in the same voice channel as the command issuer</dd>
+<dt><strong>$spyfall vote &lt;&#64;Player&gt;</strong></dt>
+<dd>Arguments: (Mention) Player
+Casts your vote for who you believe the Spy is</dd>
+<dt><strong>$spyfall guess &lt;location&gt;</strong></dt>
+<dd>Arguments: (string) Location
+The Spy has one attempt to correctly guess where they are currently at.</dd>
+<dt><strong>$spyfall timesup</strong></dt>
+<dd>The Game Master should use this command after the timer has elapsed. This will end the round.</dd>
 </dl>
 </div></blockquote>
 </div>

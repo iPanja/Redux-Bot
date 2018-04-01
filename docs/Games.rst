@@ -74,3 +74,22 @@ Tic Tac Toe
 
     **$ttt remake**
         Resets the game to allow you to make a new game using *$ttt new*
+
+.. _section-games-Spyfall:
+
+Spyfall
+-------------
+
+   **$spyfall new**
+      Creates a spyfall game with the people in the same voice channel as the command issuer
+
+   **$spyfall vote <@Player>**
+      Arguments: (Mention) Player
+      Casts your vote for who you believe the Spy is
+
+   **$spyfall guess <location>**
+      Arguments: (string) Location
+      The Spy has one attempt to correctly guess where they are currently at.
+
+   **$spyfall timesup**
+      The Game Master should use this command after the timer has elapsed. This will end the round.

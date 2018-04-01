@@ -75,6 +75,11 @@ Redux is a Discord bot created for the 2018 TSA Software Development competition
   * ```ttt new <@player> <@player>``` Creates a Tic Tac Toe game between the players mentioned
   * ```ttt place <position>``` Places your mark at the designated position
   * ```ttt remake``` Remakes the game
+* Spyfall
+  * ```spyfall new``` Creates a Spyfall game with the people in the voice channel of the command issuer
+  * ```$spyfall vote <@Player>``` Places one vote on the Player you believe is the spy
+  * ```$spyfall guess <location>``` As the spy, you can guess where you are (You only have 1 try).
+  * ```$spyfall timesup``` To be run by the Game Master when the timer has ended
 
 # Planned Features
 * **[x]** Updated interface using embeds

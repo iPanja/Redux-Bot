@@ -32,6 +32,7 @@ Commands
       * :ref:`section-games-Connect4`
       * :ref:`section-games-Hangman`
       * :ref:`section-games-TicTacToe`
+      * :ref:`section-games-Spyfall`
 
    * :ref:`section-api`
 

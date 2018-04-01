@@ -24,7 +24,8 @@ modules = [
     'mods.api.Reddit',
     'mods.games.Connect4',
     'mods.games.Hangman',
-    'mods.games.TicTacToe'
+    'mods.games.TicTacToe',
+    'mods.games.Spyfall'
 ]
 
 for cog in modules:
