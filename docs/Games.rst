@@ -93,3 +93,11 @@ Spyfall
 
    **$spyfall timesup**
       The Game Master should use this command after the timer has elapsed. This will end the round.
+
+.. _section-games-Taboo:
+
+Taboo
+-------------
+
+   **$taboo new**
+      Direct Messages the author a key word/phrase, and a blacklist of words/phrases they can not say.

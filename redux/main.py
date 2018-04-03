@@ -25,7 +25,8 @@ modules = [
     'mods.games.Connect4',
     'mods.games.Hangman',
     'mods.games.TicTacToe',
-    'mods.games.Spyfall'
+    'mods.games.Spyfall',
+    'mods.games.Taboo'
 ]
 
 for cog in modules:
@@ -51,10 +52,10 @@ async def on_message(message):
 @bot.event
 async def on_command_error(error, ctx):
     if isinstance(error, commands.CommandOnCooldown):
-        await bot.send_message(ctx.message.channel, content='This command is on a %.2fs cooldown' % error.retry_after);
-        return;
+        await bot.send_message(ctx.message.channel, content='This command is on a %.2fs cooldown' % error.retry_after)
+        return
     if isinstance(error, commands.CommandNotFound):
         return
-    raise error;
+    raise error
 
 bot.run(discordToken)

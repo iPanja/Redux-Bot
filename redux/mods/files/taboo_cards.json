@@ -1,0 +1,580 @@
+{
+    "Andy Warhol": [
+        "painter",
+        "white",
+        "pop",
+        "artist",
+        "Campbell's Soup"
+    ],
+    "Babe Ruth": [
+        "baseball",
+        "home run",
+        "New York Yankees",
+        "candy bar",
+        "sport"
+    ],
+    "Big Ben": [
+        "London",
+        "clock",
+        "landmark",
+        "time",
+        "England"
+    ],
+    "Calamine Lotion": [
+        "pink",
+        "bites",
+        "poison ivy",
+        "itch",
+        "skin"
+    ],
+    "Statue of Liberty": [
+        "torch",
+        "lady",
+        "New York Harbor",
+        "landmark",
+        "freedom"
+    ],
+    "Venus": [
+        "love",
+        "goddess",
+        "planet",
+        "flytrap",
+        "beauty"
+    ],
+    "Walter Cronkite": [
+        "CBS",
+        "anchorman",
+        "way",
+        "newscaster",
+        "TV"
+    ],
+    "Won Ton": [
+        "soup",
+        "noodle",
+        "Chinese",
+        "broth",
+        "oriental"
+    ],
+    "Zebra": [
+        "black",
+        "white",
+        "stripes",
+        "horse",
+        "Africa"
+    ],
+    "accident": [
+        "mistake",
+        "car",
+        "crash",
+        "traffic",
+        "drive"
+    ],
+    "acne": [
+        "zits",
+        "teenager",
+        "pimple",
+        "face",
+        "Clearasil"
+    ],
+    "adhesive": [
+        "glue",
+        "sticky",
+        "paste",
+        "tape",
+        "together"
+    ],
+    "bait": [
+        "worms",
+        "fishing",
+        "hook",
+        "lure",
+        "catch"
+    ],
+    "band-aid": [
+        "gauze",
+        "cover",
+        "boo-boo",
+        "cut",
+        "plastic"
+    ],
+    "barber": [
+        "haircut",
+        "scissors",
+        "shave",
+        "pole",
+        "head"
+    ],
+    "bible": [
+        "testament",
+        "book",
+        "swear",
+        "scriptures",
+        "holy"
+    ],
+    "boardwalk": [
+        "Atlantic City",
+        "beach",
+        "pier",
+        "Monopoly",
+        "wood"
+    ],
+    "book": [
+        "paperback",
+        "pages",
+        "novel",
+        "library",
+        "read"
+    ],
+    "bride": [
+        "wedding",
+        "groom",
+        "marry",
+        "white",
+        "veil"
+    ],
+    "butter": [
+        "margarine",
+        "spread",
+        "dairy",
+        "yellow",
+        "popcorn"
+    ],
+    "candle": [
+        "wick",
+        "wax",
+        "flame",
+        "burn",
+        "light"
+    ],
+    "canoe": [
+        "boat",
+        "paddle",
+        "Indian",
+        "water",
+        "birchbark"
+    ],
+    "caption": [
+        "words",
+        "photo",
+        "description",
+        "subtitle",
+        "cartoons"
+    ],
+    "cast": [
+        "actor",
+        "fishing",
+        "broken",
+        "plaster"
+    ],
+    "cheddar": [
+        "Wisconsin",
+        "cheese",
+        "sharp",
+        "dairy",
+        "cracker"
+    ],
+    "cheer": [
+        "yell",
+        "bar",
+        "toast",
+        "fans",
+        "hurrah"
+    ],
+    "confetti": [
+        "paper",
+        "scraps",
+        "throw",
+        "wedding",
+        "celebration"
+    ],
+    "cot": [
+        "bed",
+        "sleep",
+        "camp",
+        "army",
+        "folding"
+    ],
+    "crime": [
+        "arrest",
+        "law",
+        "illegal",
+        "commit",
+        "prison"
+    ],
+    "croissant": [
+        "crescent",
+        "roll",
+        "pastry",
+        "French",
+        "dough"
+    ],
+    "crosswalk": [
+        "pedestrians",
+        "cars",
+        "line",
+        "intersection",
+        "street"
+    ],
+    "crutches": [
+        "broken",
+        "leg",
+        "cane",
+        "cast",
+        "walk"
+    ],
+    "daydream": [
+        "think",
+        "sleep",
+        "fantasize",
+        "bored",
+        "mind"
+    ],
+    "dean's list": [
+        "school",
+        "grades",
+        "ranking",
+        "honor roll",
+        "college"
+    ],
+    "defrost": [
+        "ice",
+        "freezer",
+        "thaw",
+        "melt",
+        "refrigerator"
+    ],
+    "dentist": [
+        "doctor",
+        "cavity",
+        "root canal",
+        "drill"
+    ],
+    "dog sled": [
+        "travel",
+        "husky",
+        "Alaska",
+        "snow",
+        "mush"
+    ],
+    "dolphin": [
+        "Flipper",
+        "Miami",
+        "mammal",
+        "fish",
+        "porpoise"
+    ],
+    "doughnut": [
+        "dunk",
+        "hole",
+        "bagel",
+        "eat",
+        "round"
+    ],
+    "eggplant": [
+        "vegetable",
+        "purple",
+        "parmesan",
+        "eat",
+        "grow"
+    ],
+    "fax machine": [
+        "copy",
+        "telephone",
+        "send",
+        "electronic",
+        "fast"
+    ],
+    "flier": [
+        "pilot",
+        "airplane",
+        "frequent",
+        "brochure",
+        "leaflet"
+    ],
+    "grand": [
+        "parent",
+        "thousand",
+        "stand",
+        "piano",
+        "station"
+    ],
+    "hem": [
+        "bottom",
+        "dress",
+        "pants",
+        "sew",
+        "stitch"
+    ],
+    "insane": [
+        "crazy",
+        "angry",
+        "furious",
+        "Alfred E. Neuman"
+    ],
+    "invitation": [
+        "wedding",
+        "RSVP",
+        "mail",
+        "party",
+        "friend"
+    ],
+    "irritate": [
+        "bug",
+        "nerves",
+        "aggravate",
+        "annoy",
+        "bother"
+    ],
+    "kangaroo": [
+        "pouch",
+        "hop",
+        "animal",
+        "Australia",
+        "captain"
+    ],
+    "kidnap": [
+        "ransom",
+        "abduct",
+        "steal",
+        "child",
+        "hostage"
+    ],
+    "knuckle": [
+        "brass",
+        "hand",
+        "joint",
+        "finger",
+        "crack"
+    ],
+    "landscape": [
+        "lawn",
+        "plant",
+        "painting",
+        "scene",
+        "gardener"
+    ],
+    "lucnh": [
+        "meal",
+        "sandwich",
+        "noon",
+        "eat",
+        "breakfast"
+    ],
+    "mistletoe": [
+        "hang",
+        "kiss",
+        "Christmas",
+        "green",
+        "under"
+    ],
+    "movie": [
+        "motion picture",
+        "film",
+        "Hollywood",
+        "theater",
+        "screen"
+    ],
+    "neighborhood": [
+        "live",
+        "street",
+        "block",
+        "house",
+        "Mister Rogers"
+    ],
+    "outhouse": [
+        "toilet",
+        "john",
+        "half-moon",
+        "bathroom",
+        "latrine"
+    ],
+    "peanut butter": [
+        "jelly",
+        "sandwich",
+        "chunky",
+        "spread",
+        "bread"
+    ],
+    "plagiarism": [
+        "copy",
+        "steal",
+        "credit",
+        "word",
+        "ideas"
+    ],
+    "plant": [
+        "pot",
+        "water",
+        "green thumb",
+        "leaves",
+        "grow"
+    ],
+    "port": [
+        "ship",
+        "dock",
+        "wine",
+        "harbor",
+        "starboard"
+    ],
+    "pose": [
+        "photograph",
+        "model",
+        "picture",
+        "stand",
+        "still"
+    ],
+    "positive": [
+        "negative",
+        "plus",
+        "good",
+        "certain",
+        "sure"
+    ],
+    "potholder": [
+        "mitt",
+        "hand",
+        "hot",
+        "oven",
+        "burn"
+    ],
+    "protest": [
+        "sit-in",
+        "demonstrate",
+        "students",
+        "war",
+        "march"
+    ],
+    "quack": [
+        "doctor",
+        "duck",
+        "medicine",
+        "sound",
+        "noise"
+    ],
+    "race track": [
+        "Greyhound",
+        "Horses",
+        "sports car",
+        "bet",
+        "run"
+    ],
+    "radio": [
+        "AM/FM",
+        "music",
+        "stereo",
+        "listen",
+        "DJ"
+    ],
+    "rhyme": [
+        "poem",
+        "sound",
+        "words",
+        "alike",
+        "nursery"
+    ],
+    "rigor mortis": [
+        "body",
+        "dead",
+        "stiff",
+        "corpse",
+        "rigid"
+    ],
+    "sauna": [
+        "steam",
+        "room",
+        "hot",
+        "sweat",
+        "coals"
+    ],
+    "skunk": [
+        "animal",
+        "stripe",
+        "stink",
+        "spray",
+        "smell"
+    ],
+    "stagger": [
+        "sway",
+        "drunk",
+        "walk",
+        "unsteady",
+        "straight"
+    ],
+    "stove": [
+        "oven",
+        "range",
+        "burner",
+        "cook",
+        "kitchen"
+    ],
+    "stress": [
+        "nervous",
+        "tense",
+        "pressure",
+        "anxiety",
+        "work"
+    ],
+    "stuffing": [
+        "turkey",
+        "pollow",
+        "bread",
+        "dressing",
+        "stove"
+    ],
+    "sulk": [
+        "pout",
+        "mope",
+        "frown",
+        "kids",
+        "way"
+    ],
+    "swelter": [
+        "heat",
+        "sweat",
+        "perspire",
+        "hot",
+        "temperature"
+    ],
+    "theater": [
+        "Broadway",
+        "play",
+        "actors",
+        "stage",
+        "movie"
+    ],
+    "toilet": [
+        "throne",
+        "john",
+        "flush",
+        "sit",
+        "bathroom"
+    ],
+    "toupee": [
+        "bald",
+        "hairpiece",
+        "wig",
+        "rug",
+        "head"
+    ],
+    "towel": [
+        "dry",
+        "terry",
+        "wet",
+        "shower",
+        "bathroom"
+    ],
+    "valet": [
+        "parking",
+        "drive",
+        "tip",
+        "car",
+        "restaurant"
+    ],
+    "yellow": [
+        "coward",
+        "lemon",
+        "banana",
+        "submarine",
+        "color"
+    ]
+}

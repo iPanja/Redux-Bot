@@ -1,7 +1,6 @@
 import discord, asyncio, threading
 from discord.ext import commands
 from random import *
-from threading import Timer
 import config
 
 class Spyfall:
@@ -11,7 +10,6 @@ class Spyfall:
         self.reset()
     def reset(self):
         self.state = 0 #0 = GameOver    1 = Game Started    2 = Done. Spy Lost      3 = Done. Spy Won
-        self.round_time = self.config['round_time']
         self.voted = list()
         self.players = dict()
         self.suspect = None #The person w/ the most amount of votes agains them

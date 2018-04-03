@@ -33,6 +33,7 @@ Commands
       * :ref:`section-games-Hangman`
       * :ref:`section-games-TicTacToe`
       * :ref:`section-games-Spyfall`
+      * :ref:`section-games-Taboo`
 
    * :ref:`section-api`
 

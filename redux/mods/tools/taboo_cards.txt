@@ -1,0 +1,83 @@
+cot,bed,sleep,camp,army,folding
+skunk,animal,stripe,stink,spray,smell
+grand,parent,thousand,stand,piano,station
+toilet,throne,john,flush,sit,bathroom
+fax machine,copy,telephone,send,electronic,fast
+stagger,sway,drunk,walk,unsteady,straight
+daydream,think,sleep,fantasize,bored,mind
+rigor mortis,body,dead,stiff,corpse,rigid
+bible,testament,book,swear,scriptures,holy
+insane,crazy,angry,furious,Alfred E. Neuman
+band-aid,gauze,cover,boo-boo,cut,plastic
+defrost,ice,freezer,thaw,melt,refrigerator
+positive,negative,plus,good,certain,sure
+crutches,broken,leg,cane,cast,walk
+crosswalk,pedestrians,cars,line,intersection,street
+Calamine Lotion,pink,bites,poison ivy,itch,skin
+protest,sit-in,demonstrate,students,war,march
+boardwalk,Atlantic City,beach,pier,Monopoly,wood
+quack,doctor,duck,medicine,sound,noise
+bait,worms,fishing,hook,lure,catch
+barber,haircut,scissors,shave,pole,head
+potholder,mitt,hand,hot,oven,burn
+Zebra,black,white,stripes,horse,Africa
+movie,motion picture,film,Hollywood,theater,screen
+pose,photograph,model,picture,stand,still
+confetti,paper,scraps,throw,wedding,celebration
+cheer,yell,bar,toast,fans,hurrah
+caption,words,photo,description,subtitle,cartoons
+landscape,lawn,plant,painting,scene,gardener
+Walter Cronkite,CBS,anchorman,way,newscaster,TV
+croissant,crescent,roll,pastry,French,dough
+stove,oven,range,burner,cook,kitchen
+irritate,bug,nerves,aggravate,annoy,bother
+yellow,coward,lemon,banana,submarine,color
+valet,parking,drive,tip,car,restaurant
+Won Ton,soup,noodle,Chinese,broth,oriental
+kidnap,ransom,abduct,steal,child,hostage
+towel,dry,terry,wet,shower,bathroom
+canoe,boat,paddle,Indian,water,birchbark
+race track,Greyhound,Horses,sports car,bet,run
+Venus,love,goddess,planet,flytrap,beauty
+candle,wick,wax,flame,burn,light
+sauna,steam,room,hot,sweat,coals
+neighborhood,live,street,block,house,Mister Rogers
+flier,pilot,airplane,frequent,brochure,leaflet
+stress,nervous,tense,pressure,anxiety,work
+lucnh,meal,sandwich,noon,eat,breakfast
+hem,bottom,dress,pants,sew,stitch
+radio,AM/FM,music,stereo,listen,DJ
+mistletoe,hang,kiss,Christmas,green,under
+swelter,heat,sweat,perspire,hot,temperature
+Statue of Liberty,torch,lady,New York Harbor,landmark,freedom
+cheddar,Wisconsin,cheese,sharp,dairy,cracker
+eggplant,vegetable,purple,parmesan,eat,grow
+adhesive,glue,sticky,paste,tape,together
+doughnut,dunk,hole,bagel,eat,round
+port,ship,dock,wine,harbor,starboard
+peanut butter,jelly,sandwich,chunky,spread,bread
+acne,zits,teenager,pimple,face,Clearasil
+dentist,doctor,cavity,root canal,drill
+crime,arrest,law,illegal,commit,prison
+book,paperback,pages,novel,library,read
+cast,actor,fishing,broken,plaster
+butter,margarine,spread,dairy,yellow,popcorn
+knuckle,brass,hand,joint,finger,crack
+dolphin,Flipper,Miami,mammal,fish,porpoise
+Andy Warhol,painter,white,pop,artist,Campbell's Soup
+Big Ben,London,clock,landmark,time,England
+stuffing,turkey,pollow,bread,dressing,stove
+accident,mistake,car,crash,traffic,drive
+rhyme,poem,sound,words,alike,nursery
+plagiarism,copy,steal,credit,word,ideas
+plant,pot,water,green thumb,leaves,grow
+bride,wedding,groom,marry,white,veil
+dog sled,travel,husky,Alaska,snow,mush
+kangaroo,pouch,hop,animal,Australia,captain
+toupee,bald,hairpiece,wig,rug,head
+outhouse,toilet,john,half-moon,bathroom,latrine
+invitation,wedding,RSVP,mail,party,friend
+dean's list,school,grades,ranking,honor roll,college
+sulk,pout,mope,frown,kids,way
+theater,Broadway,play,actors,stage,movie
+Babe Ruth,baseball,home run,New York Yankees,candy bar,sport

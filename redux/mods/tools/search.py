@@ -3,7 +3,7 @@ import difflib
 
 #Json -> Dict
 dict = []
-with open('weapon_data.json', 'r') as f:
+with open('weapon_data.files', 'r') as f:
     dict = json.load(f)
 
 print(dict)
