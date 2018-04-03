@@ -20,7 +20,7 @@ class Taboo:
         else:
             await self.bot.delete_message(ctx.message)
     @taboo.command(pass_context = True)
-    async def pull(self, ctx):
+    async def new(self, ctx):
         if not self.loaded:
             self.load()
             self.loaded = True
