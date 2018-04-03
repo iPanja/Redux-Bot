@@ -80,18 +80,19 @@ Redux is a Discord bot created for the 2018 TSA Software Development competition
   * ```$spyfall vote <@Player>``` Places one vote on the Player you believe is the spy
   * ```$spyfall guess <location>``` As the spy, you can guess where you are (You only have 1 try).
   * ```$spyfall timesup``` To be run by the Game Master when the timer has ended
+* Taboo
+  * ```$taboo new``` Direct Messages a key word/phrase, and a blacklist of words/phrases they can not say.
 
 # Planned Features
 * **[x]** Updated interface using embeds
 * **[x]** Connect 4
 * **[x]** Reddit
+* **[-]** ~~Setup on Heroku~~ Use Raspberry Pi
+  * Run launcher.sh on startup to run the bot
 * **[ ]** Poker
 * **[ ]** Mobile App to control settings (mute players, etc)
   * iPhone - Expected to begin development on March 8
   * Android - To be announced
-* **[ ]** Setup on Heroku
-  * Not sure if it will work after it falls asleep (on the free plan)
-  * Figure out how to stop abuse of API before deploying 24/7
 * **[ ]** Voice/Music autoplay
-* **[ ]** Write a script to pull the newest release of this bot and restart the bot (for a Raspberry Pi or Heroku)
+* **[ ]** Write a script to pull the newest release of this bot and restart the bot (for a Raspberry Pi ~~or Heroku~~)
 * Find more things to add :)
