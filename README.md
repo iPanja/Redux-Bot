@@ -87,7 +87,7 @@ Redux is a Discord bot created for the 2018 TSA Software Development competition
 * **[x]** Updated interface using embeds
 * **[x]** Connect 4
 * **[x]** Reddit
-* **[x]** ~~Setup on Heroku~~ Use Raspberry Pi
+* **[x]** Setup on ~~Heroku~~ Raspberry Pi
   * Run launcher.sh on startup to run the bot
 * **[ ]** Poker
 * **[ ]** Mobile App to control settings (mute players, etc)
