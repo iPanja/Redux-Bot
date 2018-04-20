@@ -1,7 +1,7 @@
 # Redux-Bot
 A discord bot for a TSA competition, written in Python.
 
-|docs|
+[![Documentation Status](https://readthedocs.org/projects/ansicolortags/badge/?version=latest)](http://ansicolortags.readthedocs.io/?badge=latest)
 
 # Overview
 Redux is a Discord bot created for the 2018 TSA Software Development competition. If you have any issues or requests, please open up an issue.
@@ -22,8 +22,3 @@ The documentation can be found [here](https://redux.mttsa.club) on Read The Docs
 * **[ ]** Voice/Music autoplay
 * **[ ]** Write a script to pull the newest release of this bot and restart the bot (for a Raspberry Pi ~~or Heroku~~)
 * Find more things to add :)
-
-.. |docs| image:: https://readthedocs.org/projects/docs/badge/?version=latest
-    :alt: Documentation Status
-    :scale: 100%
-    :target: https://docs.readthedocs.io/en/latest/?badge=latest
