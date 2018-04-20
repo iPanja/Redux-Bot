@@ -118,7 +118,7 @@ class Blackjack:
     @commands.command(pass_context=True)
     @commands.cooldown(1, 2, commands.BucketType.server)
     async def blackjack(self, ctx, choice:str):
-        if(choice == "create"):
+        if(choice == "new"):
             if self.state != 3:
                 await self.bot.send_message(ctx.message.channel, "A game is currently in progress... use '$blackjack reset' to confirm this action")
                 return

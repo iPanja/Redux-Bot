@@ -92,3 +92,12 @@ Weather
     **$weather <city/zipcode>**
         Arguments: (string/int) city or zipcode
         Gets the current weather information
+
+.. _section-api-LeagueOfLegends:
+
+League of Legends
+---------------------
+
+      **$lol <summoner>**
+         Arguments: (string) summoner name
+         Returns basic information about the summoner

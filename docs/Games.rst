@@ -16,16 +16,17 @@ Games
 Blackjack
 ---------
 
-    **$hangman new**
-        Arguments: (Mention) Player 1, Player 2
+    **$blackjack new**
         Creates a new Blackjack game between you and an AI dealer who follows traditional dealer rules.
 
-    **$hangman guess <letter>**
-        Arguments: (1 letter/char) letter
-        Guesses the specified letter.
+    **$blackjack hit**
+        Adds an additional card to your hand
+
+   **$blackjack stay**
+         Ends your turn to let the dealer take his.
 
     **$hangman remake**
-        Resets the game to allow you to make a new game using *$hangman new*
+        Resets the game to allow you to make a new game using *$blackjack new*
 
 .. _section-games-Connect4:
 

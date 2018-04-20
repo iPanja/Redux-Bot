@@ -44,6 +44,7 @@ Commands
       * :ref:`section-api-Stocks`
       * :ref:`section-api-Reddit`
       * :ref:`section-api-Weather`
+      * :ref:`section-api-LeagueOfLegends`
 
    * :ref:`section-miscellaneous`
 
