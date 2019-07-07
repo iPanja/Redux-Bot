@@ -1,5 +1,6 @@
 # Redux-Bot
 A discord bot for a TSA competition, written in Python.
+Documentation: [ReadTheDocs](https://redux-bot.readthedocs.io/en/latest/)
 
 [![Maintenance](https://img.shields.io/maintenance/yes/2017.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity)
 [![Documentation Status](https://readthedocs.org/projects/ansicolortags/badge/?version=latest)](http://ansicolortags.readthedocs.io/?badge=latest)
