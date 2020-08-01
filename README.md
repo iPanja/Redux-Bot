@@ -1,6 +1,6 @@
 # Redux-Bot
 A discord bot for a TSA competition, written in Python.
-Placed 4th in the Pennsylvania State TSA competition in coding.
+Placed 4th in the Pennsylvania State TSA competition in Software Development.
 
 Documentation: [ReadTheDocs](https://redux-bot.readthedocs.io/en/latest/)
 
