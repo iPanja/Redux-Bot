@@ -9,7 +9,16 @@ Documentation: [ReadTheDocs](https://redux-bot.readthedocs.io/en/latest/)
 
 
 # Overview
+<img src="img/05.png" alt="A screencapture of some of the video game UIs">
+
 Redux is a Discord bot created for the 2018 TSA Software Development competition. If you have any issues or requests, please open up an issue.
+
+Features:
+* Games such as Blackjack, Connect 4, Hangman, Spyfall, and more
+* APIs - View your video game stats in League of Legends for Fortnite, as well as stock prices and the weather
+* Play music or create polls to interact with the server
+* Cute cat pictures from reddit :smile:
+
 ##### Commands Prefix: $
 
 # Documentation
