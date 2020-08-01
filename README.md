@@ -9,7 +9,7 @@ Documentation: [ReadTheDocs](https://redux-bot.readthedocs.io/en/latest/)
 
 
 # Overview
-<img src="img/05.png" alt="A screencapture of some of the video game UIs">
+<img src="img/05.PNG" alt="A screencapture of some of the video game UIs">
 
 Redux is a Discord bot created for the 2018 TSA Software Development competition. If you have any issues or requests, please open up an issue.
 
