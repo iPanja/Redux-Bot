@@ -19,7 +19,7 @@ Features:
 * Games such as Blackjack, Connect 4, Hangman, Spyfall, and more
 * APIs - View your video game stats in League of Legends for Fortnite, as well as stock prices and the weather
 * Play music or create polls to interact with the server
-* Cute cat pictures from reddit :smile:
+* Cute cat pictures from reddit!
 
 ##### Commands Prefix: $
 
