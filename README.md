@@ -24,7 +24,7 @@ Features:
 ##### Commands Prefix: $
 
 # Documentation
-The documentation can be found [here](https://redux.mttsa.club) on Read The Docs.
+The documentation can be found [here](https://redux-bot.readthedocs.io/en/latest/) on Read The Docs.
 
 # Planned Features
 * **[x]** Updated interface using embeds
